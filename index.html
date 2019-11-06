@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>恒大影城优选便利店 NO.279</title>
+    <link href="css/bass.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+	<!--头部 header-->
+	<div>
+		<header>
+			<div class="header">
+<!-- 				<a href="classify.html"><i class="icon icon-menu"></i></a> -->
+				<h1>恒大影城 优选便利店 NO.279</h1>
+<!-- 				<i class="icon icon-soso"></i> -->
+			</div>
+		</header>
+		<div style="height: 2.5rem;"></div>
+	</div>
+	<!--轮播图 banner-->
+    <div class="m-slider" id="slider">
+	    <div class="ks_dbox ks_ts">
+	         <div class="ks_wrap">
+	           <img width=730 height=400 src="images/banner1.jpg">
+	         </div>
+	         <div class="ks_wrap">
+	           <img width=730 height=400 src="images/banner2.jpg">
+	         </div>
+	         <div class="ks_wrap">
+	           <img width=730 height=400 src="images/banner3.jpg">
+	         </div>
+	    </div>
+	    <div class="ks-circles"><ul class="ks_wt"></ul></div>
+    </div>
+    <!--导航 nav-->
+    <nav>
+    	<div class="nav-box">
+<!-- 	    	<a href="javascript:;"><img src="images/nav01.png"><span>大聚惠</span></a>
+	    	<a href="javascript:;"><img src="images/nav02.png"><span>海外购</span></a>
+	    	<a href="javascript:;"><img src="images/nav03.png"><span>超市百货</span></a>
+	    	<a href="javascript:;"><img src="images/nav04.png"><span>厂家直销</span></a>
+	    	<a href="javascript:;"><img src="images/nav05.png"><span>美食娱乐</span></a>	 -->
+    	</div>
+    </nav>
+	
+	
+	
+	
+	
+	
+    <!-- 商城客户 -->
+<!--     <article>
+    	<h1>商城客户</h1>
+    	<div class="client">
+    		<a href="merchant.html"><img src="images/scyh0.jpg"><span>海绵包包</span></a>
+	    	<a href="merchant.html"><img src="images/scyh3.png"><span>韩国代购</span></a>
+	    	<a href="merchant.html"><img src="images/scyh4.png"><span>ARC潮店</span></a>
+	    	<a href="merchant.html"><img src="images/scyh1.png"><span>欧力女装</span></a>
+    	</div>
+    </article> -->
+    <!-- 酒水饮料 -->
+    <article style="margin-bottom: 0;">
+    	<h1>酒水饮料</h1>
+    </article>
+    <div class="commodity-box">
+		<ul class="commodity">
+			<li>
+				<a href="javascript:;">
+					<img width=350 height=350 src="images/goods/fujiabai.png">
+					<span>福佳白</span>
+					<span class="price">￥8.00</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img width=350 height=350 src="images/goods/laoxuehua.png">
+					<span>老雪花(不含押金/瓶)</span>
+					<span class="price">￥3.00</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img width=350 height=350 src="images/goods/danshuang.png">
+					<span>雪花淡爽(瓶)</span>
+					<span class="price">￥4.00</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img width=350 height=350 src="images/goods/ganpi.png">
+					<span>雪花干啤(瓶)</span>
+					<span class="price">￥4.00</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img width=350 height=350 src="images/goods/jinchun.png">
+					<span>雪花金纯(瓶)</span>
+					<span class="price">￥5.00</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img width=350 height=350 src="images/goods/lsqyjbp.png">
+					<span>龙山泉原浆白啤</span>
+					<span class="price">￥5.00</span>
+				</a>
+			</li>
+		</ul>	
+    </div>
+    <!-- footer 底部菜单 -->
+    <footer>
+    	<a href="javascript:;" class="pick">
+    		<i class="icon icon-f1"></i>
+    		首页
+    	</a>
+<!--     	<a href="community.html">
+    		<i class="icon icon-f2"></i>
+    		社区
+    	</a>
+    	<a href="shoppingCart.html">
+    		<i class="icon icon-f3"></i>
+    		购物车
+    	</a>
+    	<a href="user.html">
+    		<i class="icon icon-f4"></i>
+    		我
+    	</a> -->
+    </footer>
+    <!-- 引入js资源 -->
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+  	<script type="text/javascript" src="js/zepto.kslider.js"></script>
+    <script type="text/javascript">
+	  $(function(){
+	     //slider
+	      $('#slider').slider({
+	        className: 'slider_box',
+	        tick: 4000 //播放间隔
+	     });
+	     var imgPieces=$('.m-slider').find('.ks_wrap');
+	     for(var i=0;i<imgPieces.length;i++){
+	       $('.ks_wt').append('<li></li>');
+	       $('.ks_wt').find('li').eq(0).addClass('active');
+	     }
+	  });
+	</script> 
+</body>
+</html>
